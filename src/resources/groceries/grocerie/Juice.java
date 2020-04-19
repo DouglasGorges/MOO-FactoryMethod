@@ -1,4 +1,4 @@
-package resources;
+package resources.groceries.grocerie;
 
 public class Juice {
 
