@@ -1,13 +1,22 @@
 package resources;
 
-import resources.candies.Candie;
-import resources.coffees.Coffee;
-import resources.groceries.Grocery;
+public abstract class GroceryProducts {
+    String name = null;
+    Double price = null;
 
-public interface GroceryProducts {
-    public Grocery getGrocery();
+    public Double getPrice(){
+        return this.price;
+    };
 
-//    public Coffee getCoffee();
+    public String getName() {
+        return name;
+    }
 
-//    public Candie getCandie();
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 }

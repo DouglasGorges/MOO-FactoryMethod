@@ -1,18 +1,25 @@
 package application;
 
-import resources.groceries.Grocery;
+import resources.GroceryMachine;
+import resources.GroceryProducts;
 
 public class Client extends GroceryMachine {
-
-    private static Grocery grocery;
-
 
     public static void main(String[] args) {
         GroceryMachine groceryMachine = new GroceryMachine();
 
-        groceryMachine.getGrocery().getSnack().setName("Cheetos");
-        groceryMachine.getGrocery().getSoda().setName("Pepsi");
-        groceryMachine.getGrocery().getJuice().setName("Kapo");
+//        GroceryProducts request = groceryMachine.productDelivery("Snack");
+//        GroceryProducts request = groceryMachine.productDelivery("Juice");
+//        GroceryProducts request = groceryMachine.productDelivery("Soda");
+//        GroceryProducts request = groceryMachine.productDelivery("Chocolate");
+//        GroceryProducts request = groceryMachine.productDelivery("Short");
+//        GroceryProducts request = groceryMachine.productDelivery("Lungo");
+//        GroceryProducts request = groceryMachine.productDelivery("Macchiato");
+        GroceryProducts request = groceryMachine.productDelivery("Americano");
+
+        System.out.println(request.getName() +" - "+ request.getPrice());
+
+
 
     }
 }
